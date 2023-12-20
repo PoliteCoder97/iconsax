@@ -1,12 +1,24 @@
 library iconsax;
 
 import 'package:flutter/widgets.dart';
+import 'package:iconsax/reflector.dart';
+import 'package:reflectable/mirrors.dart';
 
+@reflector
 class Iconsax {
   const Iconsax._();
 
   static const String _fontFamily = 'iconsax';
   static const String _kFontPkg = 'iconsax';
+
+  static IconData? withName(String name) {
+    InstanceMirror instanceMirror = reflector.reflect(Iconsax._());
+    try {
+      return instanceMirror.invokeGetter(name) as IconData?;
+    }catch(e){
+      return null;
+    }
+  }
 
   static const IconData dcube =
       IconData(0xe901, fontFamily: _fontFamily, fontPackage: _kFontPkg);
