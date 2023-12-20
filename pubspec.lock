@@ -74,7 +74,7 @@ packages:
     source: hosted
     version: "2.4.2"
   build_runner:
-    dependency: transitive
+    dependency: "direct dev"
     description:
       name: build_runner
       sha256: "67d591d602906ef9201caf93452495ad1812bea2074f04e25dbd7c133785821b"
@@ -102,6 +102,14 @@ packages:
     description:
       name: built_value
       sha256: c9aabae0718ec394e5bc3c7272e6bb0dc0b32201a08fe185ec1d8401d3e39309
+      url: "https://pub.dev"
+    source: hosted
+    version: "8.8.1"
+  built_value_generator:
+    dependency: "direct dev"
+    description:
+      name: built_value_generator
+      sha256: "40ca746251202daf615923501d19683891184820b926208075a3e66b566bde12"
       url: "https://pub.dev"
     source: hosted
     version: "8.8.1"
@@ -376,6 +384,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  source_gen:
+    dependency: transitive
+    description:
+      name: source_gen
+      sha256: "14658ba5f669685cd3d63701d01b31ea748310f7ab854e471962670abcf57832"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.5.0"
   source_span:
     dependency: transitive
     description:

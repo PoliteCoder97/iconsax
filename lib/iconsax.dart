@@ -1,8 +1,10 @@
 library iconsax;
 
 import 'package:flutter/widgets.dart';
-import 'package:iconsax/reflector.dart';
-import 'package:reflectable/mirrors.dart';
+import 'package:reflectable/reflectable.dart';
+
+import 'main.dart';
+
 
 @reflector
 class Iconsax {
@@ -10767,3 +10769,5 @@ class Iconsax {
   static const IconData woman5 =
       IconData(0x665, fontFamily: _fontFamily, fontPackage: _kFontPkg);
 }
+
+
